@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MISA.WEB08.AMIS.Common\MISA.WEB08.AMIS.Common.csproj" />
+    <ProjectReference Include="..\MISA.WEB08.AMIS.DL\MISA.WEB08.AMIS.DL.csproj" />
+  </ItemGroup>
+
+</Project>

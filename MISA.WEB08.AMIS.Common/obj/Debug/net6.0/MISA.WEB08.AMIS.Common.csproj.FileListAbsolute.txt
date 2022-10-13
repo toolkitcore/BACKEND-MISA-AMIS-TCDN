@@ -1,0 +1,17 @@
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\bin\Debug\net6.0\MISA.WEB08.AMIS.Common.deps.json
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\bin\Debug\net6.0\MISA.WEB08.AMIS.Common.dll
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\bin\Debug\net6.0\MISA.WEB08.AMIS.Common.pdb
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.csproj.AssemblyReference.cache
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.Resources.Resource.resources
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.csproj.GenerateResource.cache
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.AssemblyInfoInputs.cache
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.AssemblyInfo.cs
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.csproj.CoreCompileInputs.cache
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.dll
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\refint\MISA.WEB08.AMIS.Common.dll
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.pdb
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\ref\MISA.WEB08.AMIS.Common.dll
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.Resources.ValidationResource.resources
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.Resources.ExportResource.resources
+D:\OJT\BackendApi\MISA.WEB08.AMIS\MISA.WEB08.AMIS.Common\obj\Debug\net6.0\MISA.WEB08.AMIS.Common.Resources.EmployeeResource.resources

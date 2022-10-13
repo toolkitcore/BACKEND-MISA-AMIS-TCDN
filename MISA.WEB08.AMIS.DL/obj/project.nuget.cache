@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "SmVtFhd4Gz6i2kq5mDnA/Rz/bDJ/kVVXy26YhqQ4FRhQrg5iTRPVMyLxz+byOivIeMn6kdEnS9P+ZsL9UxU/qg==",
+  "success": true,
+  "projectFilePath": "D:\\OJT\\BackendApi\\MISA.WEB08.AMIS\\MISA.WEB08.AMIS.DL\\MISA.WEB08.AMIS.DL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vietd\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\vietd\\.nuget\\packages\\mysqlconnector\\2.1.13\\mysqlconnector.2.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
