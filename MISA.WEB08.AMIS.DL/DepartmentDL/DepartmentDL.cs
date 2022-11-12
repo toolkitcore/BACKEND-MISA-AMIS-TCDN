@@ -1,12 +1,12 @@
 ﻿using MISA.WEB08.AMIS.Common.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace MISA.WEB08.AMIS.DL
 {
+    /// <summary>
+    /// Lớp thực thi các thao tác với database của đối tượng Department
+    /// </summary>
+    /// Created by: AnhDV (01/11/2022)
     public class DepartmentDL : BaseDL<Department>
     {
     }

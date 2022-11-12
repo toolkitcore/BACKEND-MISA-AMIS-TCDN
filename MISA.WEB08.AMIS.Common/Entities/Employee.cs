@@ -7,6 +7,8 @@ namespace MISA.WEB08.AMIS.Common.Entities
     /// Bảng nhân viên
     /// </summary>
     /// Created by: TCDN AnhDV (16/09/2022)
+    [ExcelFileNameAttribute("nhan_vien")]
+    [ExcelSheetNameAttribute("Nhân viên")]
     public class Employee : BaseEntity
     {
         #region Properties
@@ -14,7 +16,7 @@ namespace MISA.WEB08.AMIS.Common.Entities
         /// ID nhân viên
         /// </summary>
         [PrimaryKey]
-     
+
         public Guid? EmployeeID { get; set; }
 
         /// <summary>
@@ -23,6 +25,7 @@ namespace MISA.WEB08.AMIS.Common.Entities
         [Required("Mã nhân viên không được để trống")]
         [RegularExpressions(regex: "^NV-[0-9]{1,}$", ErrorMessage = "Mã nhân viên không đúng định dạng NV-XXX")]
         [ExcelColumnName("Mã nhân viên")]
+        [Unique("Mã nhân viên đã tồn tại")]
         public string? EmployeeCode { get; set; }
 
         /// <summary>
@@ -47,13 +50,13 @@ namespace MISA.WEB08.AMIS.Common.Entities
         /// <summary>
         /// Địa chỉ
         /// </summary>
-        
+
         public string? EmployeeAddress { get; set; }
 
         /// <summary>
         /// ID phòng ban
         /// </summary>
-      
+
         public Guid DepartmentID { get; set; }
 
         /// <summary>

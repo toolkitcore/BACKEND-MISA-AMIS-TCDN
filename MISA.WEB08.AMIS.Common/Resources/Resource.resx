@@ -146,7 +146,7 @@
     <comment>Thông báo exception nếu không tìm thấy khóa chính trong class</comment>
   </data>
   <data name="UserMsg_Delete_Failed" xml:space="preserve">
-    <value>Xóa nhân viên thất bại</value>
+    <value>Xóa thất bại</value>
     <comment>Thông báo cho người dùng xóa nhân viên thất bại</comment>
   </data>
   <data name="UserMsg_Insert_Duplicate" xml:space="preserve">
@@ -154,11 +154,23 @@
     <comment>Thông báo chung cho người dùng lỗi duplicate mã nhân viên</comment>
   </data>
   <data name="UserMsg_Insert_Failed" xml:space="preserve">
-    <value>Thêm mới nhân viên thất bại</value>
+    <value>Thêm mới thất bại</value>
     <comment>Thông báo cho người dùng lỗi insert nhân viên thất bại</comment>
   </data>
   <data name="UserMsg_Update_Failed" xml:space="preserve">
-    <value>Cập nhật nhân viên thất bại</value>
+    <value>Cập nhật thất bại</value>
     <comment>Thông báo cho người dùng lỗi cập nhật nhân viên thất bại</comment>
+  </data>
+  <data name="MsgError_ForeignKey" xml:space="preserve">
+    <value>Cannot delete cause reference</value>
+    <comment>Thông báo lỗi xóa do đang được reference tới khóa chính</comment>
+  </data>
+  <data name="MsgError_InvalidStatus" xml:space="preserve">
+    <value>Status invalid</value>
+    <comment>Thông báo lỗi status không hợp lệ</comment>
+  </data>
+  <data name="Property_NotFound" xml:space="preserve">
+    <value>Cannot found property name {0}</value>
+    <comment>Thông báo lỗi không tìm thấy tên property</comment>
   </data>
 </root>

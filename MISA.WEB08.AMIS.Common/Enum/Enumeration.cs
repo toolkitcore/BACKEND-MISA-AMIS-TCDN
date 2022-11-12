@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using System.ComponentModel;
 namespace MISA.WEB08.AMIS.Common.Enum
 {
     /// <summary>
@@ -53,6 +48,51 @@ namespace MISA.WEB08.AMIS.Common.Enum
         Duplicate = 409,
 
     }
+
+    /// <summary>
+    /// Các error code trả về
+    /// </summary>
+    /// CreatedBy: AnhDV (27/09/2022)
+    public enum MISAError
+    {
+        /// <summary>
+        /// Lỗi Exception
+        /// </summary>
+        Exception = 500,
+
+        /// <summary>
+        /// Lỗi trùng dữ liệu
+        /// </summary>
+        Duplicate = 6,
+
+        /// <summary>
+        /// Lỗi xóa dữ liệu
+        /// </summary>
+        Delete = 7,
+
+        /// <summary>
+        /// Lỗi validate do nghiệp vụ
+        /// </summary>
+        Validate = 8,
+
+
+        /// <summary>
+        /// Lỗi không tìm thấy dữ liệu
+        /// </summary>
+        NotFound = 404,
+
+        /// <summary>
+        /// Thành công
+        /// </summary>
+        Success = 200,
+
+        /// <summary>
+        /// Lỗi xóa dữ liệu do có nhiều bảng tham chiếu
+        /// </summary>
+        ForeignKey = 9,
+
+    }
+
     /// <summary>
     /// Tên kiểu store sẽ thực thi
     /// </summary>
@@ -99,6 +139,8 @@ namespace MISA.WEB08.AMIS.Common.Enum
         /// </summary>
         GetPaging,
 
+        GetPagingV2,
+
         /// <summary>
         /// Lấy mã code
         /// </summary>
@@ -108,7 +150,60 @@ namespace MISA.WEB08.AMIS.Common.Enum
         /// Lấy mã code
         /// </summary>
         Export,
+        /// <summary>
+        /// Kiểm tra trùng mã
+        /// </summary>
+        CheckUnique,
 
+        /// <summary>
+        /// Update status
+        /// </summary>
+        UpdateStatus
+
+    }
+
+
+    /// <summary>
+    /// Liệt kê trạng thái
+    /// </summary>
+    /// Created by: AnhDV (09/11/2022)
+    public enum Status
+    {
+        /// <summary>
+        /// Nữ
+        /// </summary>
+        [Description("Ngừng sử dụng")]
+        InActive = 0,
+
+        /// <summary>
+        /// Nam
+        /// </summary>
+        [Description("Đang sử dụng")]
+        Active = 1,
+    }
+    /// <summary>
+    /// Liệt kê giảm thuế
+    /// </summary>
+    /// Created by: AnhDV (09/11/2022)
+    public enum TaxReductionType
+    {
+        /// <summary>
+        /// Chưa xác định
+        /// </summary>
+        [Description("Chưa xác định")]
+        NotDetermined = 1,
+
+        /// <summary>
+        /// Không giảm thuế
+        /// </summary>
+        [Description("Không giảm thuế")]
+        NotReduction = 2,
+
+        /// <summary>
+        /// Giảm thuế
+        /// </summary>
+        [Description("Có Giảm thuế")]
+        Reduction = 3,
     }
     /// <summary>
     /// Liệt kê các giới tính
@@ -119,16 +214,59 @@ namespace MISA.WEB08.AMIS.Common.Enum
         /// <summary>
         /// Nữ
         /// </summary>
-        Nữ = 0,
+        [Description("Nữ")]
+        Female = 0,
 
         /// <summary>
         /// Nam
         /// </summary>
+        [Description("Nam")]
         Nam = 1,
 
         /// <summary>
         /// Khác
         /// </summary>
+        [Description("Khác")]
         Khác = 2
+    }
+
+    /// <summary>
+    /// Liệt kê các loại tính chất hàng hóa
+    /// </summary>
+    /// Created by: AnhDV(07/11/2022)
+    public enum InventoryItemType
+    {
+
+        /// <summary>
+        /// Hàng hóa
+        /// </summary>
+        [Description("Hàng hóa")]
+        Goods = 1,
+
+        /// <summary>
+        /// Dịch vụ
+        /// </summary>
+        [Description("Dịch vụ")]
+        Service = 2,
+
+
+        /// <summary>
+        /// Nguyên vật liệu
+        /// </summary>
+        [Description("Nguyên vật liệu")]
+        RawMaterial = 3,
+
+
+        /// <summary>
+        /// Thành phẩm
+        /// </summary>
+        [Description("Thành phẩm")]
+        FinishedProduct = 4,
+
+        /// <summary>
+        /// Công cụ dụng cụ
+        /// </summary>
+        [Description("Công cụ dụng cụ")]
+        Tool = 5,
     }
 }

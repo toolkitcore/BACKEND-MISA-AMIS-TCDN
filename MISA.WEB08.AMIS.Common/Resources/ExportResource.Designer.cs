@@ -95,5 +95,14 @@ namespace MISA.WEB08.AMIS.Common.Resources {
                 return ResourceManager.GetString("Export_Excel_No", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Danh_sach_don_vi_tinh.
+        /// </summary>
+        public static string Export_Unit_File_Name {
+            get {
+                return ResourceManager.GetString("Export_Unit_File_Name", resourceCulture);
+            }
+        }
     }
 }

@@ -13,11 +13,14 @@ namespace MISA.WEB08.AMIS.API.Controllers
     public class EmployeeController : BaseController<Employee>
     {
         private IEmployeeBL _employeeBL;
+        private IBaseBL<Employee> _baseBL;
 
-        public EmployeeController(IEmployeeBL baseBL) : base(baseBL)
+        public EmployeeController(IBaseBL<Employee> baseBL, IEmployeeBL employeeBL) : base(baseBL)
         {
-            _employeeBL = baseBL;
+            _baseBL = baseBL;
+            _employeeBL = employeeBL;
         }
+
 
         /// <summary>
         /// API Lấy mã nhân viên mới tự động tăng
@@ -32,18 +35,6 @@ namespace MISA.WEB08.AMIS.API.Controllers
             return Ok(maxEmployeeCode);
         }
 
-        /// <summary>
-        /// Lấy danh sách nhân viên theo điều kiện lọc và có phân trang
-        /// </summary>
-        /// <param name="filter">Điều kiện lọc</param>
-        /// <returns>Danh sách nhân viên theo điều kiện lọc và có phân trang</returns>
-        /// Created by: TCDN AnhDV (16/09/2022)
-        [HttpGet("filter")]
-        public IActionResult GetPagingData([FromQuery] EmployeeFilter filter)
-        {
-            var employeeData = _employeeBL.GetPagingData(filter);
-            return StatusCode(StatusCodes.Status200OK, employeeData);
-        }
 
         /// <summary>
         /// Xóa nhiều nhân viên
@@ -54,21 +45,8 @@ namespace MISA.WEB08.AMIS.API.Controllers
         [HttpPost("delete-multiple")]
         public IActionResult DeleteMultiple([FromBody] List<Guid> employeeIds)
         {
-            var response = _employeeBL.DeleteMultipleEmployee(employeeIds);
+            var response = _baseBL.DeleteMultiple(employeeIds);
             return Ok(response);
-        }
-
-        /// <summary>
-        /// Xuất file excel danh sách nhân viên
-        /// </summary>
-        /// <returns>File excel danh sách nhân viên</returns>
-        /// Created by: TCDN AnhDV (05/10/2022)
-        [HttpGet("export")]
-        public IActionResult ExportExcel()
-        {
-            var stream = _employeeBL.ExportExcel();
-            string excelName = $"{ExportResource.Export_Employee_File_Name}_{DateTime.Now.ToString("ddMMyyyyHHmmss")}.xlsx";
-            return File(stream, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", excelName);
         }
     }
 }

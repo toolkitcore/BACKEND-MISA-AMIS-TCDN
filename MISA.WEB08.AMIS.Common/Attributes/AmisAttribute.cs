@@ -102,6 +102,28 @@ namespace MISA.WEB08.AMIS.Common
 
         }
         /// <summary>
+        /// Attribute Unique
+        /// </summary>
+        /// Created by: TCDN AnhDV (23/09/2022)
+        [AttributeUsage(AttributeTargets.Property)]
+        public class UniqueAttribute : Attribute
+        {
+
+            public string ErrorMessage { get; set; }
+            /// <summary>
+            /// Constructor
+            /// </summary>
+            /// <param name="errorMessage">Thông báo lỗi</param>
+            /// Created by: TCDN AnhDV (23/09/2022)
+            public UniqueAttribute(string errorMessage)
+            {
+                ErrorMessage = errorMessage;
+            }
+            public UniqueAttribute()
+            {
+            }
+        }
+        /// <summary>
         /// Attribute tạo tên cột phục vụ cho việc Export Excel
         /// </summary> 
         /// Created by: TCDN AnhDV (05/10/2022)
@@ -122,6 +144,104 @@ namespace MISA.WEB08.AMIS.Common
             {
                 ColumnName = columnName;
             }
+        }
+
+        /// <summary>
+        /// Attribute tạo tên file phục vụ cho việc Export Excel
+        /// </summary>
+        /// Created by: TCDN AnhDV (05/10/2022)
+        [AttributeUsage(AttributeTargets.Class)]
+        public class ExcelFileNameAttribute : Attribute
+        {
+            /// <summary>
+            /// Tên file
+            /// </summary>
+            public string FileName { get; set; }
+
+            /// <summary>
+            /// Constructor
+            /// </summary>
+            /// <param name="fileName">Tên file</param>
+            /// Created by: TCDN AnhDV (05/10/2022)
+            public ExcelFileNameAttribute(string fileName)
+            {
+                FileName = fileName;
+            }
+        }
+
+        /// <summary>
+        /// Attribute tạo tên sheet phục vụ cho việc Export Excel
+        /// </summary>
+        /// Created by: TCDN AnhDV (05/10/2022)
+        [AttributeUsage(AttributeTargets.Class)]
+        public class ExcelSheetNameAttribute : Attribute
+        {
+            /// <summary>
+            /// Tên sheet
+            /// </summary>
+            public string SheetName { get; set; }
+
+            /// <summary>
+            /// Constructor
+            /// </summary>
+            /// <param name="sheetName">Tên sheet</param>
+            /// Created by: TCDN AnhDV (05/10/2022)
+            public ExcelSheetNameAttribute(string sheetName)
+            {
+                SheetName = sheetName;
+            }
+        }
+
+        /// <summary>
+        /// Attribute filter dữ liệu
+        /// </summary>
+        /// Created by: TCDN AnhDV (05/10/2022)
+        [AttributeUsage(AttributeTargets.Property)]
+        public class FilterAttribute : Attribute
+        {
+
+            /// <summary>
+            /// Tiền tố
+            /// </summary>
+            public string Prefix { get; set; }
+
+            /// <summary>
+            /// Hậu tố
+            /// </summary>
+            public string Suffix { get; set; }
+
+            /// <summary>
+            /// Constructor
+            /// </summary>
+            /// <param name="filterOption">Loại filter</param>
+            /// <param name="prefix">Tiền tố</param>
+            /// <param name="suffix">Hậu tố</param>
+            /// Created by: Customize AnhDV (11/10/2022)
+            public FilterAttribute(string prefix = "", string suffix = "")
+            {
+                Prefix = prefix;
+                Suffix = suffix;
+            }
+
+            /// <summary>
+            /// Constructor
+            /// </summary>
+            /// <param name="FilterOption">Loại filter</param>
+            /// <param name="prefix">Tiền tố</param>
+            /// Created by: TCDN AnhDV (05/10/2022)
+            public FilterAttribute(string prefix) : this(prefix, "")
+            {
+                Prefix = prefix;
+            }
+        }
+
+        /// <summary>
+        /// Attribute tạo cột trạng thái
+        /// </summary>
+        /// Created by: TCDN AnhDV (05/10/2022)
+        [AttributeUsage(AttributeTargets.Property)]
+        public class StatusAttribute : Attribute
+        {
         }
     }
 }

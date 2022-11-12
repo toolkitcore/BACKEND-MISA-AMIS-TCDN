@@ -79,11 +79,29 @@ namespace MISA.WEB08.AMIS.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to DuplicateCode.
+        /// </summary>
+        public static string MsgError_Duplicate {
+            get {
+                return ResourceManager.GetString("MsgError_Duplicate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mã nhân viên &lt;b&gt;&amp;lt{0}&amp;gt&lt;/b&gt; đã tồn tại trên hệ thống..
         /// </summary>
         public static string MsgErrorEmployeeDuplicate {
             get {
                 return ResourceManager.GetString("MsgErrorEmployeeDuplicate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dữ liệu đã bị xóa.
+        /// </summary>
+        public static string UserMsg_Delete_Failed {
+            get {
+                return ResourceManager.GetString("UserMsg_Delete_Failed", resourceCulture);
             }
         }
         

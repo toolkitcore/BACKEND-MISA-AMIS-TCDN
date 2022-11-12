@@ -1,15 +1,6 @@
 ﻿using Dapper;
 using MISA.WEB08.AMIS.Common.Enum;
 using MISA.WEB08.AMIS.Common.Resources;
-using MySqlConnector;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static MISA.WEB08.AMIS.Common.AmisAttribute;
 
 namespace MISA.WEB08.AMIS.DL
 {
@@ -38,43 +29,6 @@ namespace MISA.WEB08.AMIS.DL
             return string.Format(Resource.Proc_Name, tableName, procdureType);
         }
 
-        /// <summary>
-        /// Lấy property của entity là khóa chính
-        /// </summary>
-        /// <typeparam name="T">Entity truyền vào</typeparam>
-        /// <returns>Property là khóa chính</returns>
-        /// CreatedBy: AnhDV (27/09/2022)
-        public static string GetPrimaryKeyName<T>()
-        {
-            var properties = typeof(T).GetProperties();
-            string propertyName = string.Empty;
-            foreach (var property in properties)
-            {
-                var primaryKeyAttribute = (PrimaryKeyAttribute?)Attribute.GetCustomAttribute(property, typeof(PrimaryKeyAttribute));
-                if (primaryKeyAttribute != null)
-                {
-                    propertyName = property.Name;
-                    break;
-                }
-            }
-            if (string.IsNullOrEmpty(propertyName))
-            {
-                throw new Exception(string.Format(Resource.Exception_NoPrimaryKey, typeof(T).Name));
-            }
-            return propertyName;
-        }
-
-        /// <summary>
-        /// Lấy giá tên của bảng
-        /// </summary>
-        /// <typeparam name="T">Entity truyền vào</typeparam>
-        /// <returns>Tên bảng</returns>
-        /// CreatedBy: AnhDV (27/09/2022)
-        public static string GetTableName<T>()
-        {
-            var tableName = typeof(T).Name;
-            return tableName;
-        }
         /// <summary>
         /// Thực hiện mapping value của tham số đầu vào với các value của các property của đối tượng 
         /// và trả về danh sách các tham số

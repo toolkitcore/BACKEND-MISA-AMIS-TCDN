@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MISA.WEB08.AMIS.DL
+﻿namespace MISA.WEB08.AMIS.DL
 {
     /// <summary>
     /// Lớp này dùng để lấy chuỗi kết nối đến database
@@ -18,6 +12,6 @@ namespace MISA.WEB08.AMIS.DL
         /// </summary>
         public static string ConnectionString;
         #endregion
-         
+
     }
 }

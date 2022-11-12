@@ -133,4 +133,8 @@
     <value>STT</value>
     <comment>Tên của số thứ tự trong file excel export</comment>
   </data>
+  <data name="Export_Unit_File_Name" xml:space="preserve">
+    <value>Danh_sach_don_vi_tinh</value>
+    <comment>Tên file đơn vị tính sau khi export</comment>
+  </data>
 </root>

@@ -97,6 +97,24 @@ namespace MISA.WEB08.AMIS.Common.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cannot delete cause reference.
+        /// </summary>
+        public static string MsgError_ForeignKey {
+            get {
+                return ResourceManager.GetString("MsgError_ForeignKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status invalid.
+        /// </summary>
+        public static string MsgError_InvalidStatus {
+            get {
+                return ResourceManager.GetString("MsgError_InvalidStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Proc_{0}_{1}.
         /// </summary>
         public static string Proc_Name {
@@ -106,7 +124,16 @@ namespace MISA.WEB08.AMIS.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Xóa nhân viên thất bại.
+        ///   Looks up a localized string similar to Cannot found property name {0}.
+        /// </summary>
+        public static string Property_NotFound {
+            get {
+                return ResourceManager.GetString("Property_NotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xóa thất bại.
         /// </summary>
         public static string UserMsg_Delete_Failed {
             get {
@@ -133,7 +160,7 @@ namespace MISA.WEB08.AMIS.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thêm mới nhân viên thất bại.
+        ///   Looks up a localized string similar to Thêm mới thất bại.
         /// </summary>
         public static string UserMsg_Insert_Failed {
             get {
@@ -151,7 +178,7 @@ namespace MISA.WEB08.AMIS.Common.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cập nhật nhân viên thất bại.
+        ///   Looks up a localized string similar to Cập nhật thất bại.
         /// </summary>
         public static string UserMsg_Update_Failed {
             get {

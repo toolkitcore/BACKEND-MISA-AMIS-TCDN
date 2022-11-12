@@ -129,6 +129,14 @@
     <value>Mã nhân viên &lt;b&gt;&amp;lt{0}&amp;gt&lt;/b&gt; đã tồn tại trên hệ thống.</value>
     <comment>Câu thông báo nếu có mã nhân viên trùng</comment>
   </data>
+  <data name="MsgError_Duplicate" xml:space="preserve">
+    <value>DuplicateCode</value>
+    <comment>Thông báo nếu có mã trùng</comment>
+  </data>
+  <data name="UserMsg_Delete_Failed" xml:space="preserve">
+    <value>Dữ liệu đã bị xóa</value>
+    <comment>Thông báo cho người dùng dữ liệu đã bị xóa</comment>
+  </data>
   <data name="UserMsg_Validate_Failed" xml:space="preserve">
     <value>Dữ liệu đầu vào không hợp lệ</value>
     <comment>Thông báo chung cho người dùng lỗi dữ liệu đầu vào</comment>

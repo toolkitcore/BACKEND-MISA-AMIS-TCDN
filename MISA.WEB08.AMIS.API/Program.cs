@@ -5,6 +5,7 @@ using MISA.WEB08.AMIS.BL;
 using MISA.WEB08.AMIS.DL;
 using MISA.WEB08.AMIS.API.Middleware;
 
+
 var builder = WebApplication.CreateBuilder(args);
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 // Add services to the container.
@@ -46,6 +47,10 @@ builder.Services.AddControllers().ConfigureApiBehaviorOptions(options =>
 // Dependency Injection
 builder.Services.AddScoped<IEmployeeBL, EmployeeBL>(); // DI EmployeeBL vào IEmployeeBL
 builder.Services.AddScoped<IEmployeeDL, EmployeeDL>();// DI EmployeeDL vào IEmployeeDL
+
+builder.Services.AddScoped<IInventoryItemBL, InventoryItemBL>(); // DI InventoryItemBL vào IInventoryItemBL
+builder.Services.AddScoped<IInventoryItemDL, InventoryItemDL>();// DI InventoryItemDL vào IInventoryItemDL
+
 
 builder.Services.AddScoped(typeof(IBaseDL<>), typeof(BaseDL<>)); // DI BaseDL vào IBaseDL
 builder.Services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL<>)); // DI BaseBL vào IBaseBL

@@ -16,14 +16,6 @@ namespace MISA.WEB08.AMIS.DL
         public string GetNewEmployeeCode();
 
         /// <summary>
-        /// Lấy danh sách nhân viên theo điều kiện lọc và có phân trang
-        /// </summary>
-        /// <param name="EmployeeFilter">Điều kiện lọc</param>
-        /// <returns>Danh sách nhân viên theo điều kiện lọc và có phân trang</returns>
-        /// Created by: TCDN AnhDV (16/09/2022)
-        public PagingData<Employee> GetPagingData(EmployeeFilter filter);
-
-        /// <summary>
         /// Kiểm tra mã nhân viên đã tồn tại hay chưa
         /// </summary>
         /// <param name="employeeCode">Mã nhân viên</param>
@@ -32,13 +24,7 @@ namespace MISA.WEB08.AMIS.DL
         /// Created by: TCDN AnhDV (16/09/2022)
         public bool CheckEmployeeCodeExist(string employeeCode, Guid? employeeId = null);
 
-        /// <summary>
-        /// Xóa nhiều nhân viên
-        /// </summary>
-        /// <param name="employeeIds">Danh sách id nhân viên cần xóa</param>
-        /// <returns>Tổng số bản ghi bị ảnh hưởng</returns>
-        /// Created by: TCDN AnhDV (04/10/2022)
-        public int DeleteMultipleEmployee(List<Guid> employeeIds);
+
 
     }
 }
